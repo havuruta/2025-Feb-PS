@@ -1,3 +1,4 @@
+package problem;
 // B1920.java
 // 문제 1920: 수 찾기 - 배열 내 특정 정수의 존재 여부 확인.
 public class B1920 {

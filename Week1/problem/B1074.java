@@ -1,3 +1,4 @@
+package problem;
 // B1074.java
 // 문제 1074: Z - Z 모양으로 배열을 탐색하여 특정 위치 계산.
 public class B1074 {

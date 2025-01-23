@@ -1,3 +1,4 @@
+package problem;
 // B10809.java
 // 문제 10809: 알파벳 찾기 - 각 알파벳의 첫 등장 위치를 출력.
 public class B10809 {

@@ -1,3 +1,4 @@
+package problem;
 // B2609.java
 // 문제 2609: 최대공약수와 최소공배수 - 두 자연수의 GCD와 LCM 계산.
 public class B2609 {

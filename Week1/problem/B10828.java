@@ -1,3 +1,4 @@
+package problem;
 // B10828.java
 // 문제 10828: 스택 - 정수를 저장하는 스택의 다양한 연산 구현.
 public class B10828 {
