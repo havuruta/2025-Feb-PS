@@ -2,4 +2,4 @@ bin/
 .classpath
 .project
 run.class
-.setting/
+.settings/
