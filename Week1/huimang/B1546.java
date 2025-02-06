@@ -35,6 +35,7 @@ public class B1546 {
 
         // 길이로 나눠주면 그ㅑ냐아아아아아아아아앙 조작 점수의 평균.
 		System.out.println(sum/len);
+        
 	}
 
 	
