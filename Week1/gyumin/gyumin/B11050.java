@@ -26,24 +26,23 @@ public class B11050 {
     	int r = sc.nextInt();
     	
     	// n!
-    	int npac = 1;
-    	for(int i = n; i > 0; i--) {
-    		npac *= i;
-    	}
+    	int nfac = factorial(n);
     	
     	// r!
-    	int rpac = 1;
-    	for(int i = r; i > 0; i--) {
-    		rpac *= i;
-    	}
+    	int rfac = factorial(r);
+    	
     	
     	//(n-r)!
-    	int nMr = 1;
-    	for(int i = (n-r); i > 0; i--) {
-    		nMr *= i;
-    	}
-    	
+    	int nMr = factorial(n - r);
+    	    	
     	// 연산
-    	System.out.println(npac / (rpac * nMr));
+    	System.out.println(nfac / (rfac * nMr));
+    }
+    
+    public static int factorial(int i) {
+    	if(i <= 1) {
+    		return 1;
+    	}
+    	return i * factorial(i - 1);
     }
 }
