@@ -1,8 +1,32 @@
 package problem;
-// B11050.java
-// 문제 11050: 이항 계수 1 - 주어진 N과 K로 이항 계수 계산.
+
+/*
+ 문제 : 11050(이항 계수1)
+ 시간 : 176ms
+ 풀이 : 이항계수는 조합*과 같으므로, nCk를 계산하여 출력.
+ *조합(combination) : n개의 집합에서 원하는 개수 k만큼 중복없이 순서를 고려하지 않고 선택하는 것
+ */
+
+import java.util.Scanner;
+
 public class B11050 {
     public static void main(String[] args) {
-        // 문제 11050 해결을 위한 코드를 작성하세요.
-    }
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		int K = sc.nextInt();
+	
+		int p = 1;
+		int c = 1;
+		while(K != 0)
+		{
+			p *= N;
+			c *= K;
+			
+			--N;
+			--K;
+		}
+		
+		System.out.println(p / c);
+	}
 }
