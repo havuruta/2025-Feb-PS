@@ -12,7 +12,6 @@ public class B10809 {
 
 		// 입력받고 자르기
 		String s = sc.next();
-		char[] arr = s.toCharArray();
 
 		// 횟수 카운팅 할 배열 선언 및 전 idx 값 -1로 초기화
 		int[] result = new int[26];
@@ -22,11 +21,10 @@ public class B10809 {
 
 		// 돌기
 		for (int i = 0; i < result.length; i++) {
-			for (int j = 0; j < arr.length; j++) {
-				if (arr[j] == 'a' + i) {
-					result[i] = j;
-					break;
-				}
+			char thisAlpha = (char)('a' + i);
+				if (s.contains(Character.toString(thisAlpha))) {
+					result[i] = s.indexOf(thisAlpha);
+					continue;
 			}
 		}
 
