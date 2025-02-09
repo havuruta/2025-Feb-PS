@@ -1,4 +1,4 @@
-package problem;
+package jaesung;
 
 /*
  문제 : 1074(Z)

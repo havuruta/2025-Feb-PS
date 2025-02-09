@@ -1,4 +1,4 @@
-package problem;
+package jaesung;
 
 /*
  문제 : 1978(소수 찾기)

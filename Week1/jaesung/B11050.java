@@ -1,4 +1,4 @@
-package problem;
+package jaesung;
 
 /*
  문제 : 11050(이항 계수1)

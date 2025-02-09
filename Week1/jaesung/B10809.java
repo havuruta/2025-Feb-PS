@@ -1,4 +1,4 @@
-package problem;
+package jaesung;
 
 /*
  문제 : 10809(알파벳 찾기)

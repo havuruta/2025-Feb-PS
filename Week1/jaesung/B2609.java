@@ -1,4 +1,4 @@
-package problem;
+package jaesung;
 
 /*
  문제 : 2609(최대공약수와 최소공배수)
@@ -8,7 +8,8 @@ package problem;
 
 import java.util.Scanner;
 public class B2609 {
-    Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
 		int a = sc.nextInt();
 		int b= sc.nextInt();
