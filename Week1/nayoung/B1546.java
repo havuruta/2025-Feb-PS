@@ -10,19 +10,17 @@ public class B1546 {
 
         int n = sc.nextInt();  //과목 개수 n
         int[] arr = new int[n];  //개별 점수 저장하는 배열
-        int max = 0;
+        int max = 0; //최댓값 저장 위한 변수
         for(int i=0;i<n;i++){
-            arr[i] = sc.nextInt();  //개별 점수
+            arr[i] = sc.nextInt();  //개별 점수 입력
             if(arr[i]>max){
                 max = arr[i];
             }
         }
 
-        double[] arr2 = new double[n];  //새로운 점수 저장하는 배열
         double sum = 0;  //총합 저장 위한 변수 선언 및 초기화
         for(int i=0;i<n;i++){
-            arr2[i] = (double) arr[i]/max * 100;
-            sum+=arr2[i];
+            sum += (double) arr[i]/max * 100; //실수로 형변환
         }
 
         // 평균 구하기
