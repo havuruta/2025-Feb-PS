@@ -1,4 +1,6 @@
-package problem;
+package hyochang;
+
+import java.io.IOException;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +9,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class B10824 {    public static void main(String[] args) throws IOException {
+public class B10824 {
+    public static void main(String[] args) throws IOException {
     	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     	BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     	
@@ -19,10 +22,11 @@ public class B10824 {    public static void main(String[] args) throws IOExcepti
     	
     	String ab = a+b;
     	String cd = c+d;
-    	long aa=Long.parseLong(ab);//1,000,000,000,000은
-    	long cc=Long.parseLong(cd);// 약 21,000,000,00(INT 범위)
-    	long ans = aa+cc;
-    	bw.write(String.valueOf(ans));//문자열로 변환 후 출력
+        //첫째 줄에 네 자연수 A, B, C, D가 주어진다. (1 ≤ A, B, C, D ≤ 1,000,000)
+    	long ab_num=Long.parseLong(ab);//1,000,000,000,000,000(1경)
+    	long cd_num=Long.parseLong(cd);//2,100,000,000(21억)넘어감
+    	long ans = ab_num+cd_num;
+    	bw.write(String.valueOf(ans));
     	bw.flush();
     	bw.close();
     }
