@@ -42,8 +42,9 @@ public class B1259 {
             //다음 줄 read
             str = br.readLine();
         }
-        
+        // 출력
         bw.write(sb.toString());
         bw.flush();
     }
+    
 }
