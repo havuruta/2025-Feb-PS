@@ -1,56 +1,49 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class B1259 {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) throws IOException {
         
-		Scanner sc = new Scanner(System.in);
-		
-        //입력 받고 걍 다 대문자로 바꿔버령
-		String str1 = sc.next();
-		String str = str1.toUpperCase();
-
-        // 그 다음 카운트 배열 하나 맹글어서 시작할꺼임.
-		int count[] = new int[26];
-
-
-        // 가장 많이 등장한게 몇 번인지를 담을 변수
-		int max = -10000;
-
-        //그렇게 했을 때 가장 많이 등장한 수가 몇번째에 있는지 체크할 변수!
-		int index = 0;
-
-        //카운트 배열 값 증가 시켜주고
-		for(int i = 0; i<str.length(); i++) {
-			for(char alpha = 'A'; alpha<'Z'+1; alpha++) {
-				if(str.charAt(i) == alpha) {
-					count[alpha-65] += 1;
-				}
-			}
-		}
         
-        // 그 중에 가장 큰거 찾아냄.
-		for(int i = 0; i<count.length;i++) {
-			if(count[i]>max) {
-				max=count[i];
-				index = i;
-                
-			} 
-		}
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringBuilder sb = new StringBuilder();
 
-        // 가장 큰걸 찾았는데, 이 값과 같은게 여러개인지 검사. (1까지는 ㄱㅊ 어차피 만나거든 ㅎㅎ)
-        int cnt = 0;
-        for(int i = 0; i<count.length; i++) {
-            if(count[i] == max) {
-                cnt++;
+        String str = br.readLine().trim();
+
+        // 0을 입력 받을 때 까지 반복.
+        while(!str.equals("0")) {
+
+            // 받은 문자열 캐릭 배열로 바꿈.
+            char[] charArr = str.toCharArray();
+            
+            // flag 세우고 회문인지, 아닌지 체크.
+            boolean flag = true;
+
+            //양쪽 인덱스부터 줄여오면서 보는거임.
+            for(int i = 0; i<charArr.length/2; i++) {
+                if(charArr[i] !=  charArr[charArr.length-1-i]) {
+                    // 이때 같지않다? 그럼 회문이 아닌데~~~ 어쩌지~~~ 
+                    flag = false;
+                    break;
+                }
             }
+            // 글서 회문이면 Yes 출력
+            if(flag) {
+                sb.append("yes").append("\n");
+            } else {
+                // 아니면 No 출력
+                sb.append("no").append("\n");
+            }
+            //다음 줄 read
+            str = br.readLine();
         }
-
-        //그래서 1이 아니다? 그럼 잘못된거임 ㅡ..ㅡ 아니며눈 출력.
-		if(cnt == 1) {
-			System.out.println((char)(index+65));
-		} else {
-			System.out.println("?");
-		}
-	}
+        
+        bw.write(sb.toString());
+        bw.flush();
+    }
 }
