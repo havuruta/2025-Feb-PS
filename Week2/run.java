@@ -9,7 +9,8 @@ public class run {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
             // 원본 디렉터리와 새로운 디렉터리 이름 입력 받기
-            String currentDirectory = "./Desktop/2025-Feb-PS/Week2";
+
+            String currentDirectory = ".";
             String sourceDirectory = currentDirectory + "/problem";
 
             System.out.print("새로 생성할 디렉터리 이름을 입력하세요: ");
