@@ -1,9 +1,9 @@
-package Week3.problem;
+package Week3.nayoung;
 
 import java.io.IOException;
 
-public class B2566 {
+public class B1967 {
     public static void main(String[] args) throws IOException {
-
+        
     }
 }
