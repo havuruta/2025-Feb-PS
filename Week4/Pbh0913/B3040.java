@@ -24,7 +24,7 @@ public class B3040 {
                 }
                 if (sum == 100) {  //7난쟁이  합이 100이면  인덱스 저장
                     killIdx1 = i;
-                    killIDx2 = j;
+                    killIDx2 = j; 
                     break;
                 }
             }

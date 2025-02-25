@@ -24,7 +24,7 @@ public class B2231 {
                 sum += temp % 10;
                 temp /= 10;
             }
-            //입력값이 일치하면 저장하고 아니면 0
+            //입력값이 일치하면 저장 하고 아니면 0
             if (sum + i == numberChange) {
                 result = i;
                 break;

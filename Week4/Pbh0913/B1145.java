@@ -28,7 +28,7 @@ public class B1145 {
             }
             if (cnt >= 3) {  //키운드가 3이상일때 출력후 탈출
                 sb.append(i);
-                break;
+                break; 
             }
         }
         System.out.println(sb);
