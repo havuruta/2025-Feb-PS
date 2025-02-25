@@ -56,6 +56,9 @@
 
 3. **[10971 - 외판원 순회2](https://www.acmicpc.net/problem/10971)**  
    - 순회 경로 중 최소 비용을 찾는 문제입니다.
+  
+4. **[5054 - 카잉 달력](https://www.acmicpc.net/problem/6064)**
+   - 윌리잉카
 
 ---
 
