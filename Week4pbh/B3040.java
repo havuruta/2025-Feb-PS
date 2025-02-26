@@ -18,7 +18,7 @@ public class B3040 {
         for (int i = 0; i < 9; i++) {
             for (int j = 1; j < 9; j++) {
                 int sum = 0;
-                for (int k = 0; k < 9; k++) { //삼중 포문으로 두 난쟁이 제외한 합을 구함
+                for (int k = 0; k < 9; k++) { //삼중 포문으로 두 난쟁이 제외 한 합을 구함
                     if (shortPeople[k] != shortPeople[j] && shortPeople[k] != shortPeople[i]) {
                         sum += shortPeople[k];
                     }

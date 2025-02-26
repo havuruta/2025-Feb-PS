@@ -21,7 +21,7 @@ public class B1977 {
                 min = Math.min(min, i);
             }
         }
-        if (sum == 0) {  //범위를 돌 동안 제곱수가 없었으니 -1 출력
+        if (sum == 0) {  //범위를 돌 동안 제곱수가 없었으니 -1출력
             sb.append(-1);
         } else {
             sb.append(sum + "\n" + min);

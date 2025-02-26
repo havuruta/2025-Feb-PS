@@ -41,7 +41,7 @@ public class B10448 {
                     break;
                 }
             }
-            if (!a) {  //값이 없으면 0출력
+            if (!a) {  //값이 없으면 0 출력
                 sb.append(0 + "\n");
             }
         }

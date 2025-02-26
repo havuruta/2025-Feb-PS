@@ -20,7 +20,7 @@ public class B2231 {
             int temp = i;
             int sum = 0;
 
-            //탐색범위의 분해함을 구함
+            //탐색범위의 분해합을 구함
             while (temp > 0) {
                 sum += temp % 10;
                 temp /= 10;
