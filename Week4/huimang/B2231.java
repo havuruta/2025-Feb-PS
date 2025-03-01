@@ -25,13 +25,14 @@ public class B2231 {
                 sum += numberStr.charAt(j)-'0';
             }
             
-
+            // 만약 나왔다? 그럼 끝내
             if(sum == N) {
                 min = i;
                 break;
             }
           
         }
+        // 0이면 못찾은거니까 0 출력₩
         if(min == 0) {
             System.out.println(0);
         } else {

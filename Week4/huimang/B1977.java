@@ -24,6 +24,8 @@ public class B1977 {
                 if(j * j == i) {
                     // 완전 제곱수면 더함
                     sum += i;
+
+                    // 그리고 최소값 갱신
                     if(min > i) {
                         min = i;
                     } 
@@ -31,6 +33,7 @@ public class B1977 {
             }
         }
 
+        // 합이 0이면 하나도 없는것이니.. -1 출력
         if(sum == 0) {
             System.out.println(-1);
         } else {
